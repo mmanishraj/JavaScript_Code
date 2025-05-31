@@ -1,9 +1,7 @@
-import prompt from 'prompt';
-let num1 = parseFloat(prompt("Enter first number:"));
+let num1 = 10
 let operator = prompt("Enter operator (+, -, *, /):");
-let num2 = parseFloat(prompt("Enter second number:"));
+let num2 = 20
 let result;
-
 switch (operator) {
   case "+":
     result = num1 + num2;
