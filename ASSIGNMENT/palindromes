@@ -1,0 +1,8 @@
+const words = ["level", "hello", "madam", "world", "racecar"];
+
+const nonPalindromes = words.filter(word => {
+  return word !== word.split('').reverse().join('');
+});
+
+console.log(nonPalindromes); 
+\

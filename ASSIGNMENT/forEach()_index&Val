@@ -1,0 +1,5 @@
+const arr = ['a', 'b', 'c', 'd'];
+
+arr.forEach((value, index) => {
+  console.log(`Index: ${index}, Value: ${value}`);
+});

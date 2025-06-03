@@ -1,0 +1,3 @@
+const names = ["Alice", "Jonathan", "Bob", "Catherine", "Eve"];
+const longNames = names.filter(name => name.length > 5);
+console.log(longNames); 

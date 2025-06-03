@@ -1,0 +1,24 @@
+let grade = 'B'; 
+
+switch (grade) {
+  case 'A':
+    console.log("Excellent!");
+    break;
+  case 'B':
+    console.log("Good job!");
+    break;
+  case 'C':
+    console.log("Well done.");
+    break;
+  case 'D':
+    console.log("You passed.");
+    break;
+  case 'E':
+    console.log("Needs improvement.");
+    break;
+  case 'F':
+    console.log("Failed.");
+    break;
+  default:
+    console.log("Invalid grade.");
+}

@@ -1,0 +1,5 @@
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+const sumOdd = numbers.reduce((sum, num) => {
+  return num % 2 !== 0 ? sum + num : sum;
+}, 0);
+console.log(sumOdd); 

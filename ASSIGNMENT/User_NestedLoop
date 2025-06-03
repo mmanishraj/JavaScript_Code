@@ -1,0 +1,39 @@
+let role = "admin";
+let action = "edit";
+
+switch (role) {
+  case "admin":
+    switch (action) {
+      case "create":
+        console.log("Admin can create content");
+        break;
+      case "edit":
+        console.log("Admin can edit content");
+        break;
+      case "delete":
+        console.log("Admin can delete content");
+        break;
+      default:
+        console.log("Invalid action for admin");
+    }
+    break;
+
+  case "user":
+    switch (action) {
+      case "create":
+        console.log("User can create content");
+        break;
+      case "edit":
+        console.log("User can edit only their content");
+        break;
+      case "delete":
+        console.log("User cannot delete content");
+        break;
+      default:
+        console.log("Invalid action for user");
+    }
+    break;
+
+  default:
+    console.log("Invalid role");
+}

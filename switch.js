@@ -1,22 +1,20 @@
-let num1 = 10
-let operator = prompt("Enter operator (+, -, *, /):");
-let num2 = 20
-let result;
-switch (operator) {
-  case "+":
-    result = num1 + num2;
-    break;
-  case "-":
-    result = num1 - num2;
-    break;
-  case "*":
-    result = num1 * num2;
-    break;
-  case "/":
-    result = num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
-    break;
-  default:
-    result = "Invalid operator";
-}
+class Solution {
+    public int removeDuplicates(int[] nums) {
 
-alert("Result: " + result);
+        if(nums.length == 0){
+            return 0;
+        }
+
+        int write = 1;
+    
+    for(int read =1; read<nums.length; read++){
+        if(nums[read] != nums[read-1]){
+            nums[write] = nums[read];
+            write++;
+        }
+    }
+
+    return write;
+        
+    }
+}

@@ -1,0 +1,3 @@
+const words = ["Hello", "world", "this", "is", "JavaScript"];
+const sentence = words.reduce((acc, word) => acc + " " + word);
+console.log(sentence); 
